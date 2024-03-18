@@ -1,6 +1,5 @@
 package SuperPackage.DSA_Questions;
 
-import java.util.*;
 
 public class Rough {
     public static void main(String[] args) {
@@ -11,8 +10,8 @@ public class Rough {
 //        int n = 49;
 //        if((n&1)==1) System.out.println("ITs odd");
 //        else System.out.println("ITs not odd");
-        System.out.println(PowerOfTwo(256));
-
+//        System.out.println(PowerOfTwo(256));
+        System.out.println(arr());
     }
     static int ans(int [] arr){
         int uni = 0;
@@ -28,5 +27,22 @@ public class Rough {
     static boolean PowerOfTwo(int n){
        return (n & (n - 1)) == 0;
     }
+    static double arr(){
+        int n = 40;
+        double root;
+        while (true){
+            double x = n;
+
+            root = Math.abs(0.5 * x / (n /x));
+            x = root;
+
+            if(root < 1){
+                break;
+            }
+        }
+
+        return root;
+    }
+
 
 }
