@@ -3,7 +3,8 @@ package SuperPackage.DSA_Questions;
 
 public class Rough {
     public static void main(String[] args) {
-//     int [] arr = {5,6,7,7,6,5,8};
+     int [] arr = {5,6,7,7,6,5,8};
+        System.out.println(arr.length);
 //        System.out.println(ans(arr));
 //        int n= ResetTheIthBit(arr[0]);
 //        System.out.println(n);
@@ -11,7 +12,9 @@ public class Rough {
 //        if((n&1)==1) System.out.println("ITs odd");
 //        else System.out.println("ITs not odd");
 //        System.out.println(PowerOfTwo(256));
-        System.out.println(arr());
+//        System.out.println(arr());
+//
+
     }
     static int ans(int [] arr){
         int uni = 0;

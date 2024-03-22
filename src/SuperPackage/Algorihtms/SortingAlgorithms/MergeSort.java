@@ -4,10 +4,18 @@ import java.util.Arrays;
 
 public class MergeSort {
     public static void main(String[] args) {
-        int[] arr = {5, 4, 3, 2, 1};
-        System.out.println(Arrays.toString(arr));
-         MergesortInPlace(arr,0,arr.length);
-        System.out.println(Arrays.toString(arr));
+        int[] arr = {3,4,5,1,2};
+        int x = 3;
+        for (int i = 0; i < x; i++) {
+            if(x > 0){
+                arr[i] = arr[x];
+                x--;
+
+            }
+        }
+//        System.out.println(Arrays.toString(arr));
+//         MergesortInPlace(arr,0,arr.length);
+//        System.out.println(Arrays.toString(arr));
 
     }
 
@@ -36,8 +44,6 @@ public class MergeSort {
                 mix[k] = second[j];
                 j++;
             }
-
-
             k++;
         }
 //            It may be possible that one of the arrays may not be complete.
@@ -85,8 +91,8 @@ public class MergeSort {
             k++;
         }
 
-        // it may be possible that one of the arrays is not complete
-        // copy the remaining elements
+        // It may be possible to one array may be bigger than the other array,
+        // so we'll copy the remaining elements
         while (i < m) {
             mix[k] = arr[i];
             i++;
