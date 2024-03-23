@@ -14,6 +14,7 @@ public class QuickSort {
             return;
         }
         int start = low;
+
         int end = high;
         int mid = start + ( end - start)/2;
         int pivot = arr[mid];

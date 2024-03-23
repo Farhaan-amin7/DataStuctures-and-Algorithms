@@ -4,21 +4,12 @@ import java.util.Arrays;
 
 public class MergeSort {
     public static void main(String[] args) {
-        int[] arr = {3,4,5,1,2};
-        int x = 3;
-        for (int i = 0; i < x; i++) {
-            if(x > 0){
-                arr[i] = arr[x];
-                x--;
-
-            }
+     int [] arr = {1,5,8,7,4,2};
+        for (int i = 0; i < arr.length; i++) {
+          arr = Arrays.stream(arr).sorted().toArray();
+            System.out.println(Arrays.toString(arr));
         }
-//        System.out.println(Arrays.toString(arr));
-//         MergesortInPlace(arr,0,arr.length);
-//        System.out.println(Arrays.toString(arr));
-
     }
-
     static int[] Mergesort(int[] arr) {
         if (arr.length == 1) {
             return arr;
@@ -48,17 +39,18 @@ public class MergeSort {
         }
 //            It may be possible that one of the arrays may not be complete.
 //            Copy all the extra elements in the new array but at the end.
-            while (i < first.length) {
-                mix[k] = first[i];
-                i++;
-                k++;
-            }
-            while (j < second.length) {
-                mix[k] = second[j];
-                j++;
-                k++;
-            }
-            return mix;
+//            The elements of the array which has extra elements have the elements sorted.
+        while (i < first.length) {
+            mix[k] = first[i];
+            i++;
+            k++;
+        }
+        while (j < second.length) {
+            mix[k] = second[j];
+            j++;
+            k++;
+        }
+        return mix;
     }
     static void MergesortInPlace(int[] arr, int s, int e) {
         if (e - s == 1) {
@@ -91,7 +83,7 @@ public class MergeSort {
             k++;
         }
 
-        // It may be possible to one array may be bigger than the other array,
+        // It may be possible that one array may be bigger than the other array,
         // so we'll copy the remaining elements
         while (i < m) {
             mix[k] = arr[i];
