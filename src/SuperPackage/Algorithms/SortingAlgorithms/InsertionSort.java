@@ -1,4 +1,4 @@
-package SuperPackage.Algorihtms.SortingAlgorithms;
+package SuperPackage.Algorithms.SortingAlgorithms;
 
 import java.util.Arrays;
 

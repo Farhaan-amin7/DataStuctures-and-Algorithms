@@ -1,4 +1,4 @@
-package SuperPackage.Algorihtms.SortingAlgorithms;
+package SuperPackage.Algorithms.SortingAlgorithms;
 /*\
     It's a very important sorting technique which sorts the array in only one pass i.e. In only one iteration of the (i) loop let's say
 
