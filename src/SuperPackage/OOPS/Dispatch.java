@@ -24,7 +24,7 @@ public class Dispatch {
 
         r = a; // Put the Object reference of class A  in r.
 
-        r.CallMe();  // As the reference is assigned to the r, so the r object is now refering to the A class object. So it will have all the methods and variables of the class A.
+        r.CallMe();  // As the reference is assigned to the r, so the r object is now referring to the A class object. So it will have all the methods and variables of the class A.
 
         r = b;     // Object reference of B is given to the r reference variable so r will have access to all the instances and the variables of the class B.
         r.CallMe();

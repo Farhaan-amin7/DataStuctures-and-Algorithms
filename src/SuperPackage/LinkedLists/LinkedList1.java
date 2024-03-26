@@ -38,7 +38,7 @@ public class LinkedList1 {
         }
         Node node = new Node(value);
         tail.next = node;
-        tail =  node;
+        tail = node;
         size++;
     }
     public int deleteLast(){

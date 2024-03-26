@@ -1,0 +1,12 @@
+head = The initial pointer which will point to null if there is no Node present. Or if it is referring to nothing.
+tail = The last node which points to null is the node which will be called as tail.
+Node -> stores the data and the pointer to the next node.
+Node.next -> Points to the next node in the linked list if there is! Else points to null
+
+    - We need an extra Node reference so that when we traverse the linked List
+        we don't disrupt the structure of the node.
+    - We can insert an element to the last position of the node is O(1) time by simply assigning the
+        Newly created node which will be attached at the head to the tail by a simple if condition.
+    - We can traverse the entire linked list based on head and tail and a temporary reference variable
+        by using a while loop till temp reaches the end.
+Last Modified on - 25-03-2024
