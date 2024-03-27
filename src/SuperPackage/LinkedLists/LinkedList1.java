@@ -31,6 +31,7 @@ public class LinkedList1 {
         }
         return null;
     }
+
     public void insertLast(int value){
         if(tail == null){
           insertFirst(value);
