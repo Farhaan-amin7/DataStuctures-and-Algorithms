@@ -1,2 +1,7 @@
-package SuperPackage.StacksAndQueues;public class StackException {
+package SuperPackage.StacksAndQueues;
+
+public class StackException  extends Exception{
+    public StackException(String message){
+        super(message);
+    }
 }

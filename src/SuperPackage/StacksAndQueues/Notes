@@ -1,0 +1,2 @@
+Why can't we take the pointer ptr initialized with 0 only and why -1.
+%= operation comes in handy in arrays if we want to insert the newly element in the first  or last position of the array.

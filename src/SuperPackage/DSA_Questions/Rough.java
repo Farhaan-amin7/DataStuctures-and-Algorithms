@@ -1,10 +1,19 @@
 package SuperPackage.DSA_Questions;
 
 
+import java.util.Arrays;
+
 public class Rough {
     public static void main(String[] args) {
-     int [] arr = {5,6,7,7,6,5,8};
-        System.out.println(arr.length);
+     int [] temp;
+//     int count = 5;
+        int [] arr = new int[2];
+//        count++;
+
+//        System.out.println(arr.length);
+        temp = letsreturnit(arr);
+        System.out.println(Arrays.toString(temp));
+//        System.out.println(arr.length);
 //        System.out.println(ans(arr));
 //        int n= ResetTheIthBit(arr[0]);
 //        System.out.println(n);
@@ -46,6 +55,11 @@ public class Rough {
 
         return root;
     }
+    static int[] letsreturnit(int [] nums){
+        int [] temp;
+        return new int[]{-1,-1};
+    }
+
 
 
 }
