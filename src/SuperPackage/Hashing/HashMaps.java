@@ -2,6 +2,7 @@ package SuperPackage.Hashing;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Stack;
 import java.util.TreeMap;
 
 public class HashMaps {
