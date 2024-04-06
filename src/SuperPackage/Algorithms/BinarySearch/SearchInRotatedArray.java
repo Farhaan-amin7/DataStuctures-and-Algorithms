@@ -4,7 +4,7 @@ import SuperPackage.DSA_Questions.Recusion.BinarySearch;
 
 public class SearchInRotatedArray {
     public static void main(String[] args) {
-        int [] nums = {2,3,5,9,1,0};
+        int [] nums = {4,5,6,7,0,1,2};
         int pivot = FindThePivot(nums);
         System.out.println(pivot);
     }
@@ -19,12 +19,12 @@ public class SearchInRotatedArray {
         if(target >= nums[0]){
             return BinarySearchNew(nums, target, 0, pivot -1);
         }
-      return BinarySearchNew(nums, target, pivot + 1, nums.length -1);
+        return BinarySearchNew(nums, target, pivot + 1, nums.length -1);
         // There can be further cases:
 // Case:           - Pivot == target:
 // Case:           - Target > start  - Search space  is reduce to pivot - 1:
-//                  target < start
-//                                  Otherwise search in the Pivot + 1 space. Because all the elements are going to be greater than the start
+//                   target < start
+//                   Otherwise search in the Pivot + 1 space. Because all the elements are going to be greater than the start
     }
     public int BinarySearchNew(int [] arr, int target, int start , int end) {
         while (start <= end) {
@@ -46,9 +46,12 @@ public class SearchInRotatedArray {
         int end = nums.length - 1;
         while( start <= end) {
             int mid = start + (end - start) / 2;
+
+
             if (mid < end && nums[mid] > nums[mid + 1]) {
                 return mid;
             }
+
             if(mid > start && nums[mid] < nums[mid - 1]){
                 return mid - 1;
             }
