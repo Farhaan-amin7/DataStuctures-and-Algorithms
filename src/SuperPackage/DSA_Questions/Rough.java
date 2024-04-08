@@ -1,18 +1,37 @@
 package SuperPackage.DSA_Questions;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Rough {
     public static void main(String[] args) {
-     int [] temp;
-//     int count = 5;
-        int [] arr = new int[2];
+
+//        int temp1 = 100;
+//        for (int i = 0; i <= 2; i++) {
+//            int num = temp1 % 10;
+//            System.out.println(num);
+//            temp1 = temp1 / 10;
+//            System.out.println(temp1);
+//        }
+     int [] temp = {9};
+     int sum = 0;
+        int [] arr = new int[temp.length + 1];
+        List<Integer> list = new ArrayList<>(); // The decleration of the actaul list that we are going to return in our  question.
+        
+        for (int i = temp.length; i > 0 ; i--) {
+            list.add(i);
+        }
+        System.out.println(Arrays.toString(temp));
+        System.out.println(Arrays.toString(arr));
+////     int count = 5;
+//        int [] arr = new int[2];
 //        count++;
 
 //        System.out.println(arr.length);
-        temp = letsreturnit(arr);
-        System.out.println(Arrays.toString(temp));
+//        temp = letsreturnit(arr);
+//        System.out.println(Arrays.toString(temp));
 //        System.out.println(arr.length);
 //        System.out.println(ans(arr));
 //        int n= ResetTheIthBit(arr[0]);
