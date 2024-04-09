@@ -15,16 +15,19 @@ public class Rough {
 //            temp1 = temp1 / 10;
 //            System.out.println(temp1);
 //        }
-     int [] temp = {9};
-     int sum = 0;
-        int [] arr = new int[temp.length + 1];
-        List<Integer> list = new ArrayList<>(); // The decleration of the actaul list that we are going to return in our  question.
-        
-        for (int i = temp.length; i > 0 ; i--) {
-            list.add(i);
-        }
-        System.out.println(Arrays.toString(temp));
-        System.out.println(Arrays.toString(arr));
+     int [] temp = {9,3,4,5,5,76,74};
+     int sum = 2;
+     sum %= temp.length;
+        System.out.println(sum);
+//        int [] arr = new int[temp.length + 1];
+//        List<Integer> list = new ArrayList<>(); // The decleration of the actaul list that we are going to return in our  question.
+//
+//        for (int i = 0; i < temp.length; i++) {
+//            list.add(i, temp[i]);
+//        }
+//         System.out.println(list);
+//         System.out.println(Arrays.toString(temp));
+//        System.out.println(Arrays.toString(arr));
 ////     int count = 5;
 //        int [] arr = new int[2];
 //        count++;
