@@ -12,7 +12,7 @@ public class OrderAgnosticBinarySearch
         int end = arr.length - 1;
         // Find whether array is sorted in ascending or descending
 
-        boolean IsAsc = arr[start] < arr[end]; // If true this means that the array is in ascending order
+        boolean IsAsc = arr[start] < arr[end]; // If true this means that the array is in ascending order.
 
 
         while(start <= end) {
