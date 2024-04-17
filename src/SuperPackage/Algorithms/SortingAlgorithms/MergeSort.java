@@ -4,11 +4,9 @@ import java.util.Arrays;
 
 public class MergeSort {
     public static void main(String[] args) {
-     int [] arr = {1,5,8,7,4,2};
-        for (int i = 0; i < arr.length; i++) {
-          arr = Arrays.stream(arr).sorted().toArray();
-            System.out.println(Arrays.toString(arr));
-        }
+     int [] arr = {5,4,3,2,1};
+        MergesortInPlace(arr, 0, arr.length);
+        System.out.println(Arrays.toString(arr));
     }
     static int[] Mergesort(int[] arr) {
         if (arr.length == 1) {
@@ -45,6 +43,7 @@ public class MergeSort {
             i++;
             k++;
         }
+        // Either one of these will run.
         while (j < second.length) {
             mix[k] = second[j];
             j++;
