@@ -8,6 +8,12 @@ import java.util.List;
 public class Rough {
     public static void main(String[] args) {
 
+
+        String p = "ba";
+//        System.out.println(name.substring(1,5));
+        char ch = p.charAt(0);
+        String f = p.substring(1 , 1);
+        System.out.println(f);
 //        int temp1 = 100;
 //        for (int i = 0; i <= 2; i++) {
 //            int num = temp1 % 10;
@@ -15,10 +21,15 @@ public class Rough {
 //            temp1 = temp1 / 10;
 //            System.out.println(temp1);
 //        }
-     int [] temp = {9,3,4,5,5,76,74};
-     int sum = 2;
-     sum %= temp.length;
-        System.out.println(sum);
+//        Creating a new multidimensional List of lists.
+//        List<List<String>> list = new ArrayList<>();
+//        list.add(new ArrayList<>());
+//        List<String> string = new ArrayList<>(list.get(0));
+//        list.add(string);
+//       // This is the new arraylist in the existing List of List which i have created.
+//        System.out.println(list.get(0).get(0));
+//        System.out.println(list);
+
 //        int [] arr = new int[temp.length + 1];
 //        List<Integer> list = new ArrayList<>(); // The decleration of the actaul list that we are going to return in our  question.
 //

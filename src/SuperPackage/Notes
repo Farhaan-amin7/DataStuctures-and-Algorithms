@@ -1,0 +1,3 @@
+List of list is the multidimensional list which consists of other List's that we can use.
+Each internal list is a list itself and can be obtained by the index number as List interface allows us to do that. While as the Collections API does not.
+These are more useful when dealing with subsets in the iterative form. In recursive form they're easy to understand. while As in iterative form they are confusing.
