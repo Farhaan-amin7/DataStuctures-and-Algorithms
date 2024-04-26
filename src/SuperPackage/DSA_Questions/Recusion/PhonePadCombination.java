@@ -15,6 +15,7 @@ public class PhonePadCombination {
         ArrayList<String> combination = new ArrayList<>();
         String [] input = {"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         for (int i = 0; i < input[howManyTimes].length() ; i++) {
+
         }
         return new ArrayList<>();
     }
